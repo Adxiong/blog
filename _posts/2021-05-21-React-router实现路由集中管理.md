@@ -9,8 +9,6 @@ comments: true
 由于之前一直使用vue开发，对vue-router的集中式管理甚是喜欢，而在react中，为了避免路由到处引入，不便管理，我打算对route进行集中管理，创建。方便日后处理鉴权。
 <!-- more -->
 
-@[TOC](React项目中 route集中管理)
-由于之前一直使用vue开发，对vue-router的集中式管理甚是喜欢，而在react中，为了避免路由到处引入，不便管理，我打算对route进行集中管理，创建。方便日后处理鉴权。
 # 1.创建Router文件夹
 在index.js中集中引入Component（也可以利用react.lazy进行懒加载引入）
 ```js
