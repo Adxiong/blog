@@ -334,8 +334,6 @@ img {
   @include mobile {
     width: 100%;
     height: auto;
-    padding-bottom: 24px;
-    position: relative;
     border-bottom: 1px solid $divider-color;
   }
 }
