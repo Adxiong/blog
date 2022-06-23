@@ -346,7 +346,7 @@ img {
 
 nav {
   display: block;
-  margin-top: 23px; // @TODO: Vertically middle align
+  padding: 23px 0; // @TODO: Vertically middle align
   font-family: $base-font;
   font-weight: 500;
   font-size: 18px;
@@ -363,7 +363,6 @@ nav {
     letter-spacing: 1px;
 
     @include mobile {
-      margin: 0 10px;
       color: $link-color;
     }
   }
@@ -621,77 +620,7 @@ nav {
 
 
 
-// Footer
-.wrapper-footer-desktop {
-  margin-top: 50px;
-  border-top: 1px solid $footer-border-color;
-  background-color: $footer-background-color;
-  position: absolute;
-  clear:both;
-  width:100%;
-  bottom:0;
-  
-  @include mobile {
-    display: none;
-  }
 
-}
-
-.wrapper-footer-mobile {
-  display: none;
-  
-  @include mobile {
-    display: block;
-    width: 100%;
-    border-top: 1px solid $footer-border-color;
-    background-color: $footer-background-color;
-  }
-}
-
-footer {
-  padding: 20px 0;
-  text-align: center;
-
-  p {
-    font-size: $small-font-size;
-    color: $base-lighten-color;
-  }
-
-  .svg-icon {
-    display: block;
-    font-size: 0;
-    list-style: none;
-    margin: 0;
-    text-align: center;
-
-    li {
-      display: inline-block;
-      margin: 10px;
-    }
-
-    svg {
-      height: 20px;
-      width: 20px;
-      fill: $base-lighten-color;
-      
-      &:hover {
-        fill: $link-lighten-color;
-      }
-    }
-
-    em {
-      font-size: 18px;
-      line-height: 1.5;
-      margin-top: -.75em;
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-  }
-}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
